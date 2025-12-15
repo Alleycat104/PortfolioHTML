@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic:wght@400..700&display=swap');
+
+body {
+	font-family: "Special Gothic", serif;
+	color:darkblue;
+	margin: 0;
+}
+
+/* Website Links except the nav */
+a:link{
+	color: #7334b2;
+}
+a:visited{
+	color: #7334b2;
+}
+a:hover{
+	color: white;
+}
+a:active{
+	color: black;
+}
+
+header{
+	text-align:center;
+	background-color: white;
+
+}
+
+.logo{
+	display:block;
+	margin:0 auto;
+
+
+}
+h1,h2 {
+	font-family: "Pacifico", sans-serif;
+	color:#7334b2;
+}
+
+.myButton{
+	background-color:#d9c4ee;
+	color:purple;
+	border: 2px solid #b389dc;
+	padding:5px;
+	font-size:25px;
+	margin:0 auto;
+	display:block;
+	text-decoration: none;
+
+}
+
+canvas {
+      border: 1px solid #d3d3d3;
+      background-color: #f1f1f1;
+      background-image: url(images/backgroundsnow.png);  
+      background-size:cover;
+      margin: 0 auto;
+      display:block;
+
+      }
+.game-text{
+	text-align: center;
+	padding:20px;
+}
+h3{
+	font-size:20px;
+	text-align: center;
+}
+/* navigation */
+
+nav{
+	background-color: #d0d0fb;
+	border-top: 3px solid #b6b6fb;
+	border-bottom:3px solid #b6b6fb;
+	padding:5px;
+}
+nav ul{
+  	list-style-type:none;
+  	text-align: center;
+  	margin: 8px 0;
+  	padding: 0;
+}
+nav li{
+  	display: inline;
+}
+nav a{
+  	text-decoration:none;
+ 	padding:5px;
+}
+nav a:link{
+ 	color:black;
+}
+nav a:visited{
+ 	color:black;
+}
+nav a:hover{
+ 	color:white;
+}
+nav a:active{
+  	color:black;
+}
+
+.home-hero{
+	background-image:url(images/home-hero.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+
+}
+.home-hero h1{
+	font-family:'Pacifico';
+	color:#b4c7fd;
+	font-size:60px;
+	text-shadow:2px 2px 2px black;
+	text-align:center;
+	padding:50px 0;
+	margin:0;
+}
+/* Main */
+main{
+	max-width: 800px;
+	margin:30px auto;
+	padding:10px;
+}
+ul{
+	
+}
+.main-icons{
+	font-size:2em;
+	color:#7334b2;
+	margin:0 auto;
+}
+.col-sm-4{
+	display:inline;
+	padding:4px;
+	margin:0 auto;
+	text-align:center;
+}
+.my-button{
+	text-align:center;
+	margin:0 auto;
+}
+.my-button:link{
+	backgrond-color:white;
+	color:#b6b6fb;
+	border-radius:50%;
+	border:5px solid #b6b6fb;
+	padding:10px 10px ;
+	margin:30px auto;
+	text-decoration: none;
+
+}
+.my-button:hover{
+	background-color:#b4c7fd;
+	border:5px solid #7334b2;
+	text-decoration:none;
+}
+.headshot{
+	height:auto;
+	margin: 20px;
+	border-right: 5px solid black;
+	border-bottom:5px solid gray;
+	
+}
+.resume{
+	border:1px solid gray;
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+	padding:10px;
+}
+
+
+}
+.gallery .preview{
+    width: 100%;
+    height: auto;
+    float:center;
+
+}
+
+.gallery .gallery-thumbnails img {
+    width: 75;
+    height: 100px;
+    margin: 3px 10px 10px 0;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+
+/* JavaScript Game changes for mobile */
+.mobile{
+	display:none;
+}
+@media only screen and (max-width: 768px){
+	.desktop{
+		display:none;
+	}
+	.mobile{
+		display: block;
+		touch-action: manipulation;
+	}
+}
+
+
+/* Footer */
+footer{
+	font-family: 'Special Gothic';
+	border-top: white 5px dotted;
+	text-align: center;
+	clear:both;
+	background-color: #e6ccff;
+	padding-top: 20px;
+}
+.footer-icons {
+	font-size:20px;
+	color:#7334b2;
+	margin:0 auto;
+	padding-rigth:300px;
+	padding-top:20px;
+	padding-bottom:20px;
+	float:left;
+
+}
+.no-bullets{
+	list-style-type: none;
+}
+.footer-bottom{
+	background-color: black;
+	color:white;
+}
+.footer-text{
+	padding-top:20px;
+	padding-left:150px;
+	
+/*CSS without a media query--applies to all sizes unless overridden*/
+h1{
+	font-size: 4em;
+ }
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+	h1{
+		font-size: 1.8em;
+	}
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+	h1{
+		font-size: 1.5em;
+	}
+}

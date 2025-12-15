@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="description" content="This is the gallery page of Lillian's Portfolio, find my artwork rendered in digital.">
+	<title>Lillian's Portfolio::Gallery</title>
+	<!-- Bootstrap Stylesheet-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<img class="logo" src="images/logo.jpeg" width="300" height="90" alt="Logo for Lillian Orcutt's portfolio.">
+	</header>
+	<nav>
+ 	 	<ul>
+    		<li><a href="index.html">Home</a></li>
+   			<li><a href="resume.html">Resume</a></li>
+   			<li> <a href="game.html">Game</a></li>
+   			<li><a href="gallery.html">Gallery</a></li>
+  		</ul>
+	</nav>
+
+	<main>
+		<div class="comtainer-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+			<h1> Check Out my Artwork!</h1>
+				<p> Here is a gallery of some of the artwork I've done in 2025.</p>
+					</div>
+	<!--Gallery page, dont mess with code-->
+		<div class="gallery">
+
+    	<div class="preview">
+       		 <img id="preview" src="images/egirls.jpg" style="display:block;margin:0 auto;padding:10px;" alt="3 Girls talking on the phone in 3 sections."  height="600" width="400"/>
+    	</div>
+
+   			 <div class="gallery-thumbnails" style="margin:0 auto;text-align:center">
+        		<img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" src="images/pony.jpg" alt="A pony with various object floating behind her." />
+       			 <img onclick="document.getElementById('preview').src= document.getElementById('img2').src;" id="img2" src="images/alien.jpg" alt="An alien curious about a human."  />
+       			 <img onclick="document.getElementById('preview').src = document.getElementById('img3').src;" id="img3" src="images/cargirl.jpg" alt="A girl sitting in a car talking on the phone." />
+       			 <img onclick="document.getElementById('preview').src = document.getElementById('img4').src;" id="img4" src="images/max.jpg" alt="A disapointed princess." />
+        		<img onclick="document.getElementById('preview').src = document.getElementById('img5').src;" id="img5" src="images/goldship.jpg" alt="A Girl with horse ears flexing her right arm."  />	
+   		 </div>
+    </div>
+
+		
+	</main>
+	<footer>
+		
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="footer-text">	
+					<p>This website is a resume for <b>Lillian Orcutt</b>. JavaScript was used to make the photo gallery, and Bootstrap columns for responsive layout. All artwork in photo galary belongs to me.</p>
+				</div>
+			</div>
+				<div class="col-sm-6">
+					<div class="footer-icons">
+					<h2 class="contact-text">Contact Me!</h2>
+						<ul class="no-bullets">
+							<li><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:liliorcutt@gmail.com">Email</a></i></li>
+							<li><i class="fa fa-camera-retro" aria-hidden="true"></i><a href="https://www.instagram.com/old_bed_frame?igsh=eHRkczMyN3hnOWFl&utm_source=qr">Instagram</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+		<small>&copy; 2025 Lillian Orcutt. All rights reserved.</small>
+		</div>
+	
+<!--jQuery, Popper, and Bootstrap Javascript files-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	</footer>
+</body>
+</html>
